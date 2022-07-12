@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btnSalirOncliked" prefHeight="400.0" prefWidth="260.0" style="-fx-background-color: #192593; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.cdmgym.proyectocdmgym2022.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="35.0" fitWidth="152.0" layoutX="54.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assest/img/LOGO.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="123.0" prefHeight="18.0" prefWidth="69.0" text="Username" textFill="#faf9f9">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="14.0" layoutY="143.0" prefHeight="26.0" prefWidth="232.0" promptText="Username" style="-fx-background-color: #D9D9D9;" />
+      <Label layoutX="25.0" layoutY="180.0" prefHeight="18.0" prefWidth="69.0" text="Password" textFill="#faf9f9">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="13.0" layoutY="200.0" prefHeight="26.0" prefWidth="232.0" promptText="Password" style="-fx-background-color: #D9D9D9;" />
+      <Button fx:id="btniniciarSesion" layoutX="12.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#btnIniciarSeionOncliked" prefHeight="26.0" prefWidth="69.0" style="-fx-background-color: #0B294D;" text="Login" textFill="#fcfbfb" />
+      <Button fx:id="btnRegistrar" layoutX="156.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#btnRegistrarmeoncliked" prefHeight="26.0" prefWidth="69.0" style="-fx-background-color: #0B294D;" text="Sing up" textFill="#f8f9fa" />
+      <Button fx:id="btnSalir" layoutX="95.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#btnSalironcliked" prefHeight="26.0" prefWidth="69.0" style="-fx-background-color: #0B294D;" text="Salir" textFill="#faf8f8" />
+      <ComboBox fx:id="comboBoxPersona" editable="true" layoutX="16.0" layoutY="260.0" onMousePressed="#MouseOnclikedCombo" prefHeight="26.0" prefWidth="228.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="593.0" prefWidth="388.0" style="-fx-background-color: #192593; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.cdmgym.proyectocdmgym2022.controllers.AlumnoController">
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="161.0" layoutX="114.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assest/img/LOGO.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="156.0" text="Nombre" textFill="#fffefe" />
+      <Label layoutX="215.0" layoutY="156.0" text="Apellido" textFill="#fffcfc" />
+      <Label layoutX="23.0" layoutY="295.0" text="Edad" textFill="WHITE" />
+      <Label layoutX="215.0" layoutY="228.0" text="Estatura" textFill="WHITE" />
+      <TextField fx:id="txtNombreAl" layoutX="24.0" layoutY="183.0" />
+      <TextField fx:id="ApellidoTxt" layoutX="217.0" layoutY="183.0" />
+      <TextField layoutX="24.0" layoutY="315.0" />
+      <TextField layoutX="215.0" layoutY="246.0" />
+      <TextField layoutX="215.0" layoutY="315.0" />
+      <Label layoutX="23.0" layoutY="228.0" text="Peso" textFill="WHITE" />
+      <Label layoutX="237.0" layoutY="310.0" textFill="WHITE" />
+      <Button layoutX="91.0" layoutY="476.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: 31efa0; -fx-background-radius: 50;" text="Back" />
+      <Button fx:id="saveBtn" layoutX="242.0" layoutY="476.0" mnemonicParsing="false" onMouseClicked="#saveOnclikedMouse" prefHeight="26.0" prefWidth="66.0" style="-fx-background-radius: 50;" text="Save" />
+      <Label layoutX="215.0" layoutY="295.0" text="Username" textFill="#fffefe" />
+      <TextField fx:id="txtNombreAl1" layoutX="24.0" layoutY="246.0" />
+      <Label layoutX="26.0" layoutY="362.0" text="Correo" textFill="#fffcfc" />
+      <TextField fx:id="ApellidoTxt1" layoutX="24.0" layoutY="380.0" />
+      <Label layoutX="215.0" layoutY="362.0" prefHeight="18.0" prefWidth="66.0" text="Contraseña" textFill="#fffefe" />
+      <PasswordField layoutX="216.0" layoutY="380.0" />
+   </children>
+</AnchorPane>
